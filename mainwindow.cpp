@@ -2,7 +2,7 @@
 #include "./ui_mainwindow.h"
 #include <iostream>
 #include <thread>
-#include <chatbox.h>
+#include <chat_box.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -35,8 +35,9 @@ void client_read(int a, Client s)
 void MainWindow::on_pb_server_clicked()
 {
     Server serv;
-    chatbox chat;
-    chat.show();
+    chat_box *chat=new chat_box;
+    chat->show();
+    std::cout<<"fuck you"<<std::endl;
 //    std::thread sent_server(server_send, 3, serv);
 //    std::thread read_server(server_read, 4, serv);
 //    sent_server.join();
@@ -46,8 +47,9 @@ void MainWindow::on_pb_server_clicked()
 void MainWindow::on_pb_client_clicked()
 {
     Client cli;
-    chatbox chat;
-    chat.show();
+    chat_box *chat=new chat_box;
+    chat->show();
+    std::cout<<"fuck you"<<std::endl;
 //    std::thread thr(client_read, 4, cli);
 //    std::thread sent(client_send, 3, cli);
 //    sent.join();

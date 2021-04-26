@@ -39,6 +39,9 @@ if(ANDROID)
     chatbox.cpp
     chatbox.h
     chatbox.ui
+    chat_box.ui
+    chat_box.h
+    chat_box.cpp
   )
 else()
   add_executable(dotsandboxes
@@ -53,6 +56,9 @@ else()
     chatbox.cpp
     chatbox.h
     chatbox.ui
+    chat_box.ui
+    chat_box.h
+    chat_box.cpp
   )
 endif()
 
