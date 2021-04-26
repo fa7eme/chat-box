@@ -9,11 +9,8 @@ Client::Client()
 
 void Client::socket_creation()
 {
-
-    int valread;
     struct sockaddr_in serv_addr;
     std::string hello;
-    char buffer[1024] = {0};
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
         printf("\n Socket creation error \n");

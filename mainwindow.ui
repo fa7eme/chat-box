@@ -60,17 +60,30 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pb_server">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>100</x>
       <y>210</y>
       <width>80</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
-     <string>connect</string>
+     <string>server</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_client">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>210</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>client</string>
     </property>
    </widget>
   </widget>

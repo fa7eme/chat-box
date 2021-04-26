@@ -28,7 +28,10 @@ public:
 
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pb_client_clicked();
+
+private slots:
+    void on_pb_server_clicked();
 
 private:
     Ui::MainWindow *ui;
